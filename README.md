@@ -14,4 +14,6 @@ This repository is a self-contained automation that generates a dynamic SVG imag
 
 6. **Output:** The generated SVG file (`top-langs.svg`) is committed back to the repository, replacing the old file.
 
-This process ensures the stats card on your profile is always up-to-date without any manual intervention.
+This process ensures the stats card on your profile is always up-to-date without any manual intervention. 
+
+![Top Languages](https://github.com/jshujshu/github-stats-generator/raw/main/top-langs.svg)
