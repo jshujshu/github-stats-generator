@@ -1,6 +1,8 @@
 ## GitHub Stats Generator
 This repository is a self-contained automation that generates a dynamic SVG image for a GitHub profile.
 
+![Top Languages](https://github.com/jshujshu/github-stats-generator/raw/main/top-langs.svg)
+
 ### How It Works
 1. **Trigger:** A GitHub Actions workflow (`.github/workflows/generate-stats.yml`) is set to run automatically every 24 hours. It can also be triggered manually.
 
@@ -15,5 +17,3 @@ This repository is a self-contained automation that generates a dynamic SVG imag
 6. **Output:** The generated SVG file (`top-langs.svg`) is committed back to the repository, replacing the old file.
 
 This process ensures the stats card on your profile is always up-to-date without any manual intervention. 
-
-![Top Languages](https://github.com/jshujshu/github-stats-generator/raw/main/top-langs.svg)
