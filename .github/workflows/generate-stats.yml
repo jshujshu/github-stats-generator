@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Updated to a more recent version to avoid the npm warnings
+          node-version: '18'
 
       - name: Install dependencies
         run: |
@@ -26,7 +26,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          node top-langs-generator.js
+          node top-langs-generator.mjs
 
       - name: Commit and push SVG
         run: |
