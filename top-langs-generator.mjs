@@ -83,7 +83,7 @@ async function generateTopLangsSvg() {
   // Sort languages by size and limit to the top 5
   const sortedLanguages = Object.keys(languageCounts)
     .sort((a, b) => languageCounts[b] - languageCounts[a])
-    .slice(0, 5)
+    .slice(0, 10) // change back to 5 & remove 119 and below
     .map((lang) => ({
       name: lang,
       size: languageCounts[lang],
@@ -116,6 +116,11 @@ function generateSvg(languages) {
     "#ffb86c", // Orange
     "#50fa7b", // Green
     "#bd93f9", // Purple
+    "#f1fa8c", // Yellow
+    "#ff5555", // Red
+    "#6272a4", // Desaturated blue
+    "#8be9fd80", // Transparent light blue (for contrast)
+    "#ff9ff3", // Light pink
   ];
 
   let svgBars = '';
